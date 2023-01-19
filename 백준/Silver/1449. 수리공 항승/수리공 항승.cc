@@ -33,10 +33,9 @@ int main() {
             tapeIdx = points[i];
         }
         else if(points[i] - tapeIdx >= tapeLen) {
-            tapeIdx = -1;
-            i--;
+            tapeIdx = points[i];
+            answer++;
         }
-        else continue;
     }
 
     cout << answer << '\n';
