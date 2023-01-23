@@ -5,12 +5,11 @@
 using namespace std;
 
 int solution(int n, int k, vector<int> enemy) {
-    long long enemyNum = 0, left, right, mid, i, partSum;
-    vector<long long> chance;
-    vector<long long> partArr;
+    int enemyNum = 0, left, right, mid, i, partSum;
+    vector<int> chance, partArr;
     
     left = 0;
-    right = enemy.size() + 1;
+    right = enemy.size();
     
     while(left + 1 < right) {
         mid = (left + right) >> 1;
