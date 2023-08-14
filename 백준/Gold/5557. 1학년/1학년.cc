@@ -4,12 +4,6 @@ using namespace std;
 
 void init(void);
 
-#include <bits/stdc++.h>
-
-using namespace std;
-
-void init(void);
-
 typedef long long int ll;
 
 int numbers[101];
