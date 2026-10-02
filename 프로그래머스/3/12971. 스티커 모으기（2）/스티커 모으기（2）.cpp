@@ -8,7 +8,7 @@ int solution(vector<int> sticker) {
     
     int n = sticker.size();
     
-    if(n == 1) return sticker[0];
+    if(n < 3) return *max_element(sticker.begin(), sticker.end());
     
     vector<int> dp1(n, 0);
     vector<int> dp2(n, 0);
